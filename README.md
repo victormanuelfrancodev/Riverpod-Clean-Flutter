@@ -1,16 +1,36 @@
-# flutter_application_1
+# Weather Description App 🌤️
 
-A new Flutter project.
+A Flutter application that provides weather information using an external API and handles errors efficiently.
 
-## Getting Started
+## Features 🚀
 
-This project is a starting point for a Flutter application.
+- Consumes weather API to fetch weather data.
+- Error handling and state management using `Riverpod` and `Dio`.
+- Clean architecture with separation of data, domain, and presentation layers.
 
-A few resources to get you started if this is your first Flutter project:
+## Key Classes 📚
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `WeatherDescriptionScreen`: The main screen displaying weather information.
+- `WeatherDescriptionApiDataSource`: Data source interacting with the external API.
+- `WeatherDescriptionRepositoryImp`: Repository providing weather data, managing errors, and transforming the response into domain models.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation 🛠️
+
+1. Clone this repository.
+2. Ensure you have Flutter installed on your system. Visit [Flutter Installation](https://flutter.dev/docs/get-started/install) for more details.
+3. Navigate to the project directory and run `flutter pub get` to install dependencies.
+4. Run `flutter run` to start the application on a device or emulator.
+
+## Dependencies 📦
+
+- `flutter_riverpod`: For state management and dependency injection.
+- `dio`: For making HTTP requests.
+- `riverpod_annotation`, `build_runner`: For auto-generating code necessary for `Riverpod`.
+
+## How to Contribute 🤝
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue for suggestions or any bugs found.
+
+## License 📄
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
