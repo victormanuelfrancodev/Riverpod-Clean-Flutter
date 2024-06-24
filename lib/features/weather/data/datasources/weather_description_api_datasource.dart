@@ -14,7 +14,7 @@ class WeatherDescriptionApiDataSource
   Future<DescriptionWeatherModel> getWeather() async{
     try {
       final response = await _dio.get(
-          "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=1a45999a27b9fa8c504f55df8ca2aba4");
+          "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=");
       if(response.statusCode == 200){
         return DescriptionWeatherModel.fromJson(response.data);
       }

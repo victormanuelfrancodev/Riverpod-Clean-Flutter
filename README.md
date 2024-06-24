@@ -14,6 +14,23 @@ A Flutter application that provides weather information using an external API an
 - `WeatherDescriptionApiDataSource`: Data source interacting with the external API.
 - `WeatherDescriptionRepositoryImp`: Repository providing weather data, managing errors, and transforming the response into domain models.
 
+## Usign Flavors 👨🏽‍🍳
+
+This project utilizes different flavors to accommodate multiple development environments like development and production:
+ 
+- Development Flavor: Use the following command to run the development flavor:
+
+```
+flutter run --flavor dev -t lib/main_dev.dart
+```
+
+- Production Flavor: Use the following command to run the production flavor:
+
+```
+flutter run --flavor prod -t lib/main_prod.dart
+```
+
+
 ## Installation 🛠️
 
 1. Clone this repository.
